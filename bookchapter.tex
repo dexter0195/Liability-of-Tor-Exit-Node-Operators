@@ -70,8 +70,7 @@
 The abstract should summarize the contents of the paper and should
 contain at least 70 and at most 150 words. It should be written using the
 \emph{abstract} environment.
-\keywords{We would like to encourage you to list your keywords within
-the abstract section}
+\keywords{Tor, Exit Node, Operator, ISP, Internet Service Provider, Liability}
 \end{abstract}
 
 
@@ -81,9 +80,7 @@ the abstract section}
 
 \subsection{What is TOR}
 
-Tor is a free and open source software aimed to enable 
-anonymous communication on the web. It is one the most used and secure \textit{Privacy Enhancing Technology} that is available now.\footnote{Although the technology is very strong and secure there are still many attacks that can undermine the anonymity of the Tor users} We can find it in the same class as VPNs, Proxies and 
-DNS Bypass. However it is the only tecnique that can truly ensure your anonymity on the web. For this reason Tor has become more and more popular during these years, expecially in countries where censorsihp is most suffered. Today Tor is used on average by 2 Million users every day.
+Tor is a free and open source software aimed to enable anonymous communication on the web. It is one the most used and secure \textit{Privacy Enhancing Technology} that is available now.\footnote{Although the technology is very strong and secure there are still many attacks that can undermine the anonymity of the Tor users} We can find it in the same class as VPNs, Proxies and DNS Bypass. However it is the only technique that can truly ensure your anonymity on the web. For this reason Tor has become more and more popular during these years, especially in countries where censorship is most suffered. Today Tor is used on average by 2 Million users every day.
 
 The name Tor stands for ``The Onion Router`` 
 which is the technology at the core of this software.
@@ -124,8 +121,8 @@ All the relays in the network are run by individual volunteers or organizations 
 relies on this to guarantee the anonymity.
 
 As shown in Fig \ref{fig:fig_tor_arch} the connection between client/relay and relay/relay is encrypted
-and does not cause any problems to the operator. The Exit Relays insted, are the one that carry out the 
-last-mile communication. They are the most exposed part of the network, since the comminication between
+and does not cause any problems to the operator. The Exit Relays instead, are the one that carry out the 
+last-mile communication. They are the most exposed part of the network, since the communication between
 the client and the server is at this stage unencrypted, making the request look like as it is the 
 Exit Relay which is originating that traffic. 
 
@@ -148,10 +145,44 @@ TODO: Company Terms of Service, like Aruba
 
 \section{The case Austrian Regional Crime Court vs William Weber}
 In this section I will present the case of Austrian regional criminal court in Graz vs. W. Weber. This case sees W.Weber, a tor exit node operator being sentenced by the court for aiding the distribution of child pornography. I will discuss the case and talk about the reason why he was held accountable and what where the court motivation for that.
-asdasd
+
+On July 9th 2014 William Weber a Tor Exit Node Operator was sentenced to 3 months of jail and 3 years of probation for helping the distribution of child pornography on through his server.
+
+As we discussed in the previous paragraph, Tor Exit Node Operators are the one that are most exposed in terms of criminal liability since they supply their internet access point and their unique IP address to the Tor community.
+
+The main reason why the court judged W.Weber liable of aiding the distribution of child pornography was that he was intercepted while talking to an anonymous person on the web about the possibility of hosting child pornography on his server. He said: 
+\begin{quote}
+    \textit{ "You can host 20TB child porn with us on some encrypted HDD”[...] “You can host child porn on our servers” [...] “If you want to host child porn ... I would use Tor.”}
+\end{quote}
+That showed to the Court that not only was he at least aware that his Tor node could have been used to do distribute child pornography, but also he does not disapprove that.
+However he declared on his blog that this conversation was used out of context and that he was just talking hypothetically. 
+Despite that, he was found guilty because (as stated by Huťko \cite{HUSOVEC}):
+\begin{quote}
+\textit{
+    The Austrian Court found that this activity may lead to criminal liability for aiding and abetting of a crime of distribution of child pornography when coupled with other circumstances.}
+\end{quote}
+The other circumstances that invalidated the \textit{mere conduit} safe harbour were these very transcript. In fact as stated by Art.12 of the eCommerce Directive 
+\begin{quote}
+    \textit{1. Where an information society service is provided that consists of the transmission in a communication network of information provided by a recipient of the service, or the provision of access to a communication network, Member States shall ensure that the service provider is not liable for the information transmitted, on condition that the provider:\\
+(a) does not initiate the transmission;\\
+(b) does not select the receiver of the transmission; and\\
+(c) does not select or modify the information contained in the transmission.}
+\end{quote}
+
+This also considering the Recital 44 of the Directive:
+
+\begin{quote}
+    \textit{
+(44) A service provider who deliberately collaborates with one of the recipients of his service in order to undertake illegal acts goes beyond the activities of "mere conduit" or "caching" and as a result cannot benefit from the liability exemptions established for these activities.}
+\end{quote}
+
+Since he was intercepted having that conversation with that anonymous user he was actively collaborating in the intent of doing illegal activities. That invalidated the liability exemption from "mere conduit" which explains why the Austrian Regional Court found him guilty.
+
+At the end of this first litigation he decided to do not go in further trials and accept the sentence.
+
 
 \section{Liability of Internet Service Providers for Copyright Infringement}
-In this section I will present a similar scenario but in the case of copyright infringement. I will discuss the mere conduit safe harbor that can be applied to ISP in case of copyright infringement correlating the it with court decisions. I will also discuss wether a tor operator can be considered an ISP. This in correlation with the Directive 2000/31/EC of the European Parliament and of the Council of 8 June 2000.
+In this section I will present a similar scenario but in the case of copyright infringement. I will discuss the mere conduit safe harbor that can be applied to ISP in case of copyright infringement correlating the it with court decisions. I will also discuss weather a tor operator can be considered an ISP. This in correlation with the Directive 2000/31/EC of the European Parliament and of the Council of 8 June 2000.
 
 \section{The situation in Italy}
 In this section I will present how in Italy is handled the liability of ISP illustrating some examples on court decision, as the sentence n. 54946/2016 of the Corte di Cassazione. And also I will discuss the d.lgs 70/2003, with particular interest to art 14, art 15 and art 16.
@@ -180,6 +211,12 @@ Excellence, Tallin, Estonia
     \textit{The Playpen Cases: Frequently Asked Questions}
     link: https://www.eff.org/it/pages/playpen-cases-frequently-asked-questions\\
     date of last visit: "03/04/2019"
+    
+    \bibitem{HUSOVEC}
+    Huťko´s Technology Law Blog\\
+    \textit{Austrian Court Sentenced a Tor Exit Node Operator}
+    link:     http://www.husovec.eu/2014/07/austrian-court-sentenced-tor-exit-node.html
+    date of last visit: "12/04/2019"
 
 \end{thebibliography}
 
