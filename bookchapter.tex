@@ -146,7 +146,7 @@ TODO: Company Terms of Service, like Aruba
 \section{The case Austrian Regional Crime Court vs William Weber}
 In this section I will present the case of Austrian regional criminal court in Graz vs. W. Weber. This case sees W.Weber, a tor exit node operator being sentenced by the court for aiding the distribution of child pornography. I will discuss the case and talk about the reason why he was held accountable and what where the court motivation for that.
 
-On July 9th 2014 William Weber a Tor Exit Node Operator was sentenced to 3 months of jail and 3 years of probation for helping the distribution of child pornography on through his server.
+On June 30th 2014 William Weber a Tor Exit Node Operator was sentenced to 3 months of jail and 3 years of probation for helping the distribution of child pornography on through his server.
 
 As we discussed in the previous paragraph, Tor Exit Node Operators are the one that are most exposed in terms of criminal liability since they supply their internet access point and their unique IP address to the Tor community.
 
@@ -169,16 +169,24 @@ The other circumstances that invalidated the \textit{mere conduit} safe harbour 
 (c) does not select or modify the information contained in the transmission.}
 \end{quote}
 
-This also considering the Recital 44 of the Directive:
+Also it is to say that forensic experts have reconstructed some images depicting pornographic acts of children. However he could not be found guilty since there was no evidence that these picture were effectively downloaded by him or by the the automatic caching mechanism. And he was by far protected by the article 12 section 2 of the eCommerce Directive for these evidence:
+
+\begin{quote}
+    \textit{2. The acts of transmission and of provision of access referred to in paragraph 1 include the automatic, intermediate and transient storage of the information transmitted in so far as this takes place for the sole purpose of carrying out the transmission in the communication network, and provided that the information is not stored for any period longer than is reasonably necessary for the transmission.}
+\end{quote}
+
+But, since he was intercepted having that conversation with the anonymous user, he was actively collaborating with the intent of doing illegal activities with that person. That invalidated the liability exemption from "mere conduit" considering the Recital 44 of the Directive:
 
 \begin{quote}
     \textit{
 (44) A service provider who deliberately collaborates with one of the recipients of his service in order to undertake illegal acts goes beyond the activities of "mere conduit" or "caching" and as a result cannot benefit from the liability exemptions established for these activities.}
 \end{quote}
 
-Since he was intercepted having that conversation with that anonymous user he was actively collaborating in the intent of doing illegal activities. That invalidated the liability exemption from "mere conduit" which explains why the Austrian Regional Court found him guilty.
-
 At the end of this first litigation he decided to do not go in further trials and accept the sentence.
+
+This decision demonstrates that Tor Exit Node Operators should be very cautious when operating their activity not only from the technology prospective, but also from the legal one. However as cited in \cite{HUSOVEC} \textit{we should be really careful in keeping the standard of "deliberate collaboration" very high, otherwise it might be easy to criminalize Tor Exit Nodes operators}. . Criminalizing the Tor operators would be very easy in countries \textit{with less legitimate criminal offences such as anti-state propaganda crimes} \cite{HUSOVEC}. Without their valuable work the whole anonymity network phenomena would not exist. They in fact operate in one of the most crucial point of the architecture, they connect the anonymous world with the real world, without that connection the anonymity world has no point to exist.
+
+However this sentence has not to be considered as a sentence against Tor. Tor is still perceived as an important tool to ensure privacy and secrecy, as stated by  Shubert in the Constitudional Court who said that \textit{"privacy and especially the secrecy of communication on the Internet have to be protected"} and that the legality of Tor should not be challenged. \cite{PCW}
 
 
 \section{Liability of Internet Service Providers for Copyright Infringement}
@@ -217,6 +225,12 @@ Excellence, Tallin, Estonia
     \textit{Austrian Court Sentenced a Tor Exit Node Operator}
     link:     http://www.husovec.eu/2014/07/austrian-court-sentenced-tor-exit-node.html
     date of last visit: "12/04/2019"
+    
+    \bibitem{PCW}
+    Loek Essers, PC WORLD\\
+    \textit{Tor exit node operator convicted of abetting spread of child porn}
+    link:         https://www.pcworld.com/article/2452320/tor-exit-node-operator-convicted-of-abetting-spread-of-child-porn.html
+    date of last visit: "12/04/2019
 
 \end{thebibliography}
 
