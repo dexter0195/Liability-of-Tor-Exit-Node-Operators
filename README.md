@@ -1,7 +1,7 @@
 # On the liability of Tor Exit Relays Operators
 ## Abstract
 Tor is a network providing anonymous access to the Internet
-to users all over the world. It relies on the eorts of volunteers who
+to users all over the world. It relies on the efforts of volunteers who
 share their personal internet access point with other users of the network.
 This service is extremely valuable in countries where the censorship is
 much stronger but it is sometime used for bad purposes. Many where the
