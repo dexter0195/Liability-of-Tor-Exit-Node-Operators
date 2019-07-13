@@ -1,4 +1,4 @@
-# On the liability of Tor Exit Relays Operators
+# On the liability of Tor Exit Relay Operators
 ## Abstract
 Tor is a network providing anonymous access to the Internet
 to users all over the world. It relies on the efforts of volunteers who
